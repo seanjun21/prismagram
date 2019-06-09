@@ -5,6 +5,6 @@ export default {
     userById: async (_, arg) => {
       const { id } = arg;
       return await prisma.user({ id });
-    }
-  }
+    },
+  },
 };

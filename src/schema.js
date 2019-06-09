@@ -7,7 +7,7 @@ const allResolvers = fileLoader(path.join(__dirname, '/api/**/*.js'));
 
 const schema = makeExecutableSchema({
   typeDefs: mergeTypes(allTypes),
-  resolvers: mergeResolvers(allResolvers)
+  resolvers: mergeResolvers(allResolvers),
 });
 
 export default schema;

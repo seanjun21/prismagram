@@ -9,7 +9,7 @@ export default {
       return prisma.posts({
         where: {
           user: {
-            id_in: [...following.map(everyUser => everyUser.id), user.id],
+            id_in: [...following.map(eachUser => eachUser.id), user.id],
           },
         },
         orderBy: 'createdAt_DESC',
